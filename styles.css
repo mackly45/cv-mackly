@@ -1,0 +1,161 @@
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css');
+
+body {
+    background: linear-gradient(45deg, #23a6d5, #23a6d5);
+}
+
+.navbar {
+    transform: perspective(1000px) rotateX(30deg);
+    transform-origin: center bottom;
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.6);
+}
+
+.navbar .nav-item {
+    transform-style: preserve-3d;
+}
+
+.navbar .nav-link {
+    color: white !important;
+    transition: background-color .3s, transform .3s;
+}
+
+.navbar .nav-link:hover {
+    background-color: #111 !important;
+    transform: rotateY(360deg);
+}
+/*fin css navbar*/
+/* footer*/
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css');
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    transform: perspective(1000px) rotateX(30deg);
+    transform-origin: center bottom;
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.6);
+}
+
+.copyright {
+    margin: 0;
+    line-height: 1.5;
+    transform-style: preserve-3d;
+    transition: background-color .3s, transform .3s;
+}
+
+.copyright:hover {
+    background-color: #111;
+    transform: rotateY(360deg);
+}
+/*fin footer*/
+
+.name-container {
+    text-align: center;
+    padding: 50px;
+    position: relative; /* to contain absolute positioned elements */
+    overflow: hidden; /* to hide elements that move outside the container */
+}
+
+.name, .role {
+    letter-spacing: 2px;
+    color: #666666;
+    position: relative; /* to keep text above the background elements */
+    z-index: 1; /* to keep text above the background elements */
+}
+
+.name {
+    font-size: 3em;
+    letter-spacing: 4px;
+    color: #3a3a3a;
+}
+
+.role {
+    font-size: 1.5em;
+}
+
+.name span, .role span {
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+section {
+  opacity: 1;
+  height:100%;
+  width: 100%;
+}
+.active section {
+  transition: opacity 0.5s;
+}
+
+.btn-cta {
+  border: 5px solid;
+  border-radius: 0;  
+}
+
+.btn-cta__green, .btn-cta__gray {
+  background-color: transparent;
+}
+
+.btn-cta__green {
+  border-color:#76FF03;
+  color: #76FF03;
+}
+
+.btn-cta__gray {
+  border:#ccc;
+  color: #ccc;
+}
+
+.background-element {
+  position: absolute;
+  z-index: 0; /* keep the elements below the text */
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #FCA5A5;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-bottom: 50px solid #B1E8ED;
+}
+
+.square {
+  width: 50px;
+  height: 50px;
+  background-color: #F0C808;
+}
+
+.diamond {
+  width: 30px;
+  height: 30px;
+  background-color: #2c13887c;
+  clip-path: polygon(50% 0%, 0% 50%, 50% 100%, 100% 50%);
+}
+
+.language-symbol {
+  font-size: 1em;
+  color: #fafafa;
+}
+
+/* This animation moves the element around the screen */
+@keyframes moveAround {
+  0% { top: 0; left: 0; }
+  25% { top: 0; left: 100%; }
+  50% { top: 100%; left: 100%; }
+  75% { top: 100%; left: 0; }
+  100% { top: 0; left: 0; }
+}

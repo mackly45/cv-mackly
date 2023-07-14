@@ -1,145 +1,192 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <title>CV de Thicaya Mackly Loïck</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <script src="script.js"></script>
+    <!-- Ajouter les liens pour Bootstrap et Font Awesome -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/color/jquery.color.plus-names-2.1.2.min.js"></script>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1>Thicaya Mackly Loïck</h1>
-      <p>Étudiant en Nouvelles Technologies</p>
-    </header>
-    
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Mon CV</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#profile">Profil</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#skills">Compétences</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#experience">Expérience professionnelle</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#technology">Expérience technologique</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#education">Diplômes et formations</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#projects">Projets et réalisations</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#interests">Loisirs</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
-        </ul>
-      </div>
+   <!-- nav bar--> 
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="profil.html"><i class="fas fa-user"></i> Profil</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="competences.html"><i class="fas fa-briefcase"></i> Compétences</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="experience.html"><i class="fas fa-chart-line"></i> Expérience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="experience-academique.html"><i class="fas fa-book"></i> Expérience Académique</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="formation.html"><i class="fas fa-graduation-cap"></i> Formation</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="projet-realisation.html"><i class="fas fa-project-diagram"></i> Projet & Réalisation</a>
+                </li>
+            </ul>
+        </div>
     </nav>
-    
-    <section class="profile" id="profile">
-      <h2>Profil personnel</h2>
-      <p>Je suis un étudiant passionné par les nouvelles technologies, à la recherche de nouvelles opportunités dans le domaine. J'ai un intérêt marqué pour les activités sportives, la musique, la lecture et les voyages. J'ai développé un sens du service à travers différentes expériences et j'ai acquis des compétences en travail d'équipe, en ponctualité et en utilisation des outils informatiques. Grâce à certains projets, j'ai développé des compétences telles que la capacité à me surpasser, à travailler en équipe de manière synchronisée, à assigner des tâches aux membres de l'équipe et à assurer le suivi du projet jusqu'à sa réalisation.</p>
-      <div class="emoji"><i class="fas fa-smile"></i></div>
-    </section>
-    
-    <section class="skills" id="skills">
-      <h2>Compétences</h2>
-      <ul>
-        <li>Maîtrise des logiciels Microsoft Office, y compris Word, Excel et PowerPoint.</li>
-        <li>Capacité à travailler efficacement en équipe, en favorisant la communication et la collaboration.</li>
-        <li>Excellentes compétences en résolution de problèmes et en prise de décision.</li>
-        <li>Forte adaptabilité aux nouveaux environnements et aux situations changeantes.</li>
-        <li>Organisation et gestion du temps pour atteindre les objectifs fixés.</li>
-        <li>Bonnes compétences en communication écrite et verbale.</li>
-        <li>Aptitude à apprendre rapidement de nouvelles technologies et à les appliquer efficacement.</li>
-      </ul>
-    </section>
-    
-    <section class="experience" id="experience">
-      <h2>Expérience professionnelle</h2>
-      <h3>Informaticien - Cybercafé</h3>
-      <p>Février 2017 - Décembre 2018</p>
-      <ul>
-        <li>Accueil des clients et assistance dans l'utilisation des ordinateurs.</li>
-        <li>Gestion des impressions, des photocopies et des numérisations.</li>
-        <li>Maintenance de base des ordinateurs et résolution des problèmes techniques.</li>
-        <li>Classement des documents et gestion des fournitures de bureau.</li>
-      </ul>
-    </section>
-    
-    <section class="technology" id="technology">
-      <h2>Expérience dans le domaine des nouvelles technologies</h2>
-      <ul>
-        <li>Compétent dans les langages de programmation HTML, CSS et JavaScript, ainsi que PHP pour le développement web.</li>
-        <li>Connaissance des langages Python et C++ pour la création d'applications et de logiciels avec l'outil Microsoft Visual Studio Community.</li>
-        <li>Familiarité avec les bases de données SQL et les requêtes pour le stockage et la récupération des données.</li>
-        <li>Utilisation d'outils de développement tels que Visual Studio Code, Jupyter Notebook Text, Git, Adobe XD, Photoshop, Premiere Pro et Burp Suite pour la cybersécurité.</li>
-        <li>Expérience dans la création de sites web responsives en utilisant des frameworks tels que Bootstrap et jQuery.</li>
-        <li>Compréhension des concepts de base en data full stack, y compris la manipulation et la visualisation des données.</li>
-        <li>Capacité à travailler en équipe, à collaborer avec d'autres développeurs et à respecter les délais.</li>
-      </ul>
-    </section>
-    
-    <section class="education" id="education">
-      <h2>Diplômes et formations complémentaires</h2>
-      <ul>
-        <li>Baccalauréat série D obtenu en 2019, avec mention Bien.</li>
-        <li>Apprentissage de la langue anglaise à Young-Teacher School en 2020, avec certification de niveau intermédiaire.</li>
-        <li>Année préparatoire à l'université ESCIC en 2021, avec focus sur les matières liées à l'informatique et aux sciences.</li>
-        <li>Actuellement en première année de BB1 en data full stack à l'université ESCIC depuis 2022, où j'approfondis mes connaissances en développement web et en analyse de données.</li>
-      </ul>
-    </section>
-    
-    <section class="projects" id="projects">
-      <h2>Projets et réalisations</h2>
-      <ul>
-        <li>Participation à plusieurs projets scolaires en informatique, notamment la création d'une page web d'inscription et de connexion en HTML, CSS et Bootstrap.</li>
-        <li>Développement d'une application de gestion des tâches en Python, avec fonctionnalités de création, modification et suppression de tâches.</li>
-        <li>Réalisation d'une calculatrice en base 36 en C++, avec prise en charge des opérations mathématiques de base.</li>
-        <li>Création d'un cahier des charges détaillé pour un site web de commerce électronique de vente de ciment, incluant les fonctionnalités, l'architecture de base de données et les aspects de sécurité.</li>
-        <li>Participation à des forums sur le développement web, l'innovation informatique et la cybersécurité, avec des présentations sur des sujets liés à la sécurité des applications web.</li>
-        <li>Lecture de livres spécialisés sur le développement web et la programmation, notamment "Clean Code" de Robert C. Martin et "Eloquent JavaScript" de Marijn Haverbeke.</li>
-        <li>Participation à des hackathons et à des compétitions de programmation, où j'ai pu mettre en pratique mes compétences en résolution de problèmes et en développement rapide d'applications.</li>
-      </ul>
-    </section>
-    
-    <section class="interests" id="interests">
-      <h2>Loisirs</h2>
-      <p>En dehors de mes activités académiques et professionnelles, je pratique des sports de montagne et de randonnée. J'ai également un intérêt pour la musique et la lecture. Je suis actif sur les réseaux sociaux et j'aime partager mes expériences de voyage.</p>
-      <div class="emoji"><i class="fas fa-mountain"></i></div>
-    </section>
-    
-    <section class="contact" id="contact">
-      <h2>Coordonnées</h2>
-      <p>Téléphone: 065961559</p>
-      <p>Adresse: Raffinerie, rue Mikossa en face du foyer Coraf</p>
-      <p>Email: macklyloickabsolue@gmail.com</p>
-      <div class="social-links">
-        <a href="mailto:macklyloickabsolue@gmail.com"><i class="fas fa-envelope"></i></a>
-        <a href="https://www.linkedin.com/in/thicayamacklyloick/" target="_blank"><i class="fab fa-linkedin"></i></a>
-      </div>
-    </section>
-    
-    <footer>
-      <p>&copy; 2023 Thicaya Mackly Loïck - Tous droits réservés</p>
+       <!--fin nav bar-->
+       <!-- name container -->
+    <div class="name-container">
+        <div class="name">
+            <span>T</span>
+            <span>H</span>
+            <span>I</span>
+            <span>C</span>
+            <span>A</span>
+            <span>Y</span>
+            <span>A</span>
+            <span>,</span>
+            <br>
+            <span>M</span>
+            <span>A</span>
+            <span>C</span>
+            <span>K</span>
+            <span>L</span>
+            <span>Y</span>
+            <span>,</span>
+            <br>
+            <span>L</span>
+            <span>O</span>
+            <span>I</span>
+            <span>C</span>
+            <span>K</span>
+        </div>
+        <div class="role">
+            <span>Développeur Full Stack</span>
+        </div>
+    </div>
+    <!-- end name container -->
+
+       <!--footer-->
+       <footer class="footer">
+        <div class="container text-center">
+            <p class="copyright animated">&copy; <span id="year"></span> Thicaya Mackly Loïck - Tous droits réservés</p>
+        </div>
     </footer>
-  </div>
+<!--fin footer-->
+
+
+<!-- script navbar-->
+    <script>
+    $(document).ready(function(){
+        $(".nav-item").hover(
+            function(){
+                $(this).animate({backgroundColor: '#343434'}, 'slow');
+                $(this).addClass('animated pulse');
+            },
+            function(){
+                $(this).animate({backgroundColor: '#000'}, 'slow');
+                $(this).removeClass('animated pulse');
+            }
+        );
+    });
+/***** fin script navbar*********/
+document.getElementById('year').innerHTML = new Date().getFullYear();
+        $(".footer").hover(
+            function(){
+                $(".copyright").addClass('pulse');
+            },
+            function(){
+                $(".copyright").removeClass('pulse');
+            }
+        );/*fin script footer*/
+        window.addEventListener('DOMContentLoaded', (event) => {
+
+const nameContainer = document.querySelector('.name-container');
+
+// Array of programming languages symbols
+const languages = ['HTML', 'CSS', 'JS', 'C++', 'C#', 'Python', 'Java', 'PHP'];
+
+// Create circles, triangles, squares, diamonds and language symbols
+for (let i = 0; i < 20; i++) {
+  const circle = document.createElement('div');
+  circle.className = 'background-element circle';
+  circle.style.animation = `moveAround ${10 + Math.random() * 20}s linear infinite`;
+  nameContainer.appendChild(circle);
+
+  const triangle = document.createElement('div');
+  triangle.className = 'background-element triangle';
+  triangle.style.animation = `moveAround ${10 + Math.random() * 20}s linear infinite`;
+  nameContainer.appendChild(triangle);
+
+  const square = document.createElement('div');
+  square.className = 'background-element square';
+  square.style.animation = `moveAround ${10 + Math.random() * 20}s linear infinite`;
+  nameContainer.appendChild(square);
+
+  const diamond = document.createElement('div');
+  diamond.className = 'background-element diamond';
+  diamond.style.animation = `moveAround ${10 + Math.random() * 20}s linear infinite`;
+  nameContainer.appendChild(diamond);
+
+  const langSymbol = document.createElement('div');
+  langSymbol.className = 'background-element language-symbol';
+  langSymbol.textContent = languages[Math.floor(Math.random() * languages.length)];
+  langSymbol.style.animation = `moveAround ${10 + Math.random() * 20}s linear infinite`;
+  nameContainer.appendChild(langSymbol);
+}
+
+// Randomly position the background elements
+const backgroundElements = nameContainer.querySelectorAll('.background-element');
+backgroundElements.forEach(element => {
+  element.style.top = `${Math.random() * 90}%`;
+  element.style.left = `${Math.random() * 90}%`;
+});
+
+// Select all elements with class name or role
+const nameElements = document.querySelectorAll('.name span');
+const roleElements = document.querySelectorAll('.role span');
+
+// Increase opacity every 300ms
+nameElements.forEach((elem, index) => {
+    setTimeout(() => {
+        elem.style.opacity = '1';
+    }, index * 300);
+});
+
+// Start after nameElements finished
+roleElements.forEach((elem, index) => {
+    setTimeout(() => {
+        elem.style.opacity = '1';
+    }, (index + nameElements.length) * 300);
+});
+
+// Add or remove class 'active' to sections on click
+const sections = document.querySelectorAll('section');
+sections.forEach(section => {
+    section.addEventListener('click', () => {
+        if(section.classList.contains('active')) {
+            section.style.opacity = '0';
+            section.classList.remove('active');
+        } else {
+            section.style.opacity = '1';
+            section.classList.add('active');
+        }
+    });
+});
+
+// Add 'clicked' class to small circles on click
+const smallCircles = document.querySelectorAll('.small-circle');
+smallCircles.forEach((circle) => {
+  circle.addEventListener('click', () => {
+    circle.classList.add('clicked');
+  });
+});
+});
+
+
+
+
+</script>
 </body>
 </html>
